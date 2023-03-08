@@ -106,6 +106,7 @@ input::placeholder {
 
 .filtres p {
     font-weight: 700;
+    color: black;
 }
 
 .filtres div {
@@ -203,6 +204,7 @@ input::placeholder {
 }
 
 .afficherplus p {
+    padding-left: 20px;
     margin-top: 3%;
     color: black;
     font-weight: 700;
@@ -210,7 +212,7 @@ input::placeholder {
 }
 
 #populaires {
-    width: 25%;
+    width: 28%;
     background: #F2F2F2;
     border-radius: 20px;
 }
@@ -238,7 +240,7 @@ input::placeholder {
     background: white;
     border-radius: 25px;
     box-sizing: border-box;
-    width: 80%;
+    width: 92%;
     padding: 5px;
     box-shadow: 0px 0px 10px rgb(216, 216, 216);
     margin: 10px;
@@ -250,16 +252,23 @@ input::placeholder {
 }
 
 .populaires-hotels h3 {
+    color: black;
+    font-weight: 700;
     padding-left: 15px;
     margin: 0;
     font-size: 16px;
 }
 
 .populaires-hotels p {
+    color: black;
     padding-left: 15px;
     padding-top: 5px;
     margin: 0;
     font-size: 14px;
+}
+
+.populaires-hotels span {
+    padding-left: 15px;
 }
 
 .populaires-hotels .starbleu {
@@ -272,7 +281,7 @@ input::placeholder {
     display: flex;
     object-position: center;
     object-fit: cover;
-    width: 123px;
+    width: 137px;
     height: 144px;
     border-radius: 20px 0px 0px 20px;
 }
@@ -309,6 +318,10 @@ input::placeholder {
 footer {
     display: flex;
     justify-self: center;
+}
+
+footer h4 {
+    font-weight: 700;
 }
 
 .contenu-footer {
@@ -378,6 +391,15 @@ footer {
         flex-wrap: nowrap;
     }
 
+    .populaires-hotels .images-populaires {
+        width: 106px;
+        height: 144px;
+    }
+
+    .activite p {
+        font-size: 12px;
+    }
+
     .activite .images-activites {
         height: 211px;
     }
@@ -392,7 +414,7 @@ footer {
     body {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
 
     .header {
@@ -448,6 +470,7 @@ footer {
     #hebergements {
         margin-top: 20px;
         width: 100%;
+        background: white;
     }
 
     #carte-hebergements {
@@ -458,6 +481,10 @@ footer {
     .listes-hotels {
         width: 70%;
         margin: 15px;
+    }
+
+    .afficherplus p {
+        display: none;
     }
 
     #carte-populaires {
@@ -482,4 +509,15 @@ footer {
         display: block;
     }
 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.card-footer {
+    padding: 0 0 12px 15px;
 }
