@@ -86,6 +86,11 @@ p {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
+    cursor: pointer;
+}
+
+.fa-solid.fa-magnifying-glass {
+    display: none;
 }
 
 input::placeholder {
@@ -302,9 +307,10 @@ input::placeholder {
     box-shadow: 0px 0px 10px rgb(216, 216, 216);
 }
 
-.activite p {
+.activite h3 {
     padding-left: 5%;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .activite .images-activites {
@@ -361,7 +367,7 @@ footer h4 {
 
 /* TABLETTE */
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 992px) {
 
     body {
         display: flex;
@@ -396,7 +402,7 @@ footer h4 {
         height: 144px;
     }
 
-    .activite p {
+    .activite h3 {
         font-size: 12px;
     }
 
@@ -409,7 +415,7 @@ footer h4 {
 
 /* MOBILE */
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 768px) {
 
     body {
         display: flex;
@@ -446,6 +452,7 @@ footer h4 {
     }
 
     .navbar a:hover {
+        width: 100%;
         padding-bottom: 1.4rem;
         border-bottom: #0065FC 3px solid;
         border-right: 20px;
@@ -453,12 +460,48 @@ footer h4 {
         color: #0065FC;
     }
 
+    h1 {
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    p {
+        padding-left: 20px
+    }
+
+    .recherche {
+        padding-left: 15px;
+    }
+
+    #recherche {
+        display: none;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        display: flex;
+        align-items: center;
+        width: 49px;
+        height: 49px;
+        background-color: #0065FC;
+        color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+    }
+
     .filtres {
         align-items: start;
+        flex-wrap: wrap;
     }
 
     .filtres p {
         display: flex;
+    }
+
+    .fa-solid.fa-info {
+        margin-left: 20px;
     }
 
     .hebergements-pluspopulaires {
@@ -479,18 +522,35 @@ footer h4 {
     }
 
     .listes-hotels {
-        width: 70%;
+        width: 92%;
         margin: 15px;
+    }
+
+    .listes-hotels p {
+        padding: 0;
     }
 
     .afficherplus p {
         display: none;
     }
 
+    #populaires {
+        border-radius: 0px;
+    }
+
     #carte-populaires {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .populaires-hotels .images-populaires {
+        width: 137px;
+        height: 144px;
+    }
+
+    #activites h2 {
+        margin-left: 20px;
     }
 
     .act {
@@ -501,8 +561,16 @@ footer h4 {
     }
 
     .activite {
-        width: 95%;
+        width: 93%;
         margin: 15px;
+    }
+
+    .activite h3 {
+        font-size: 16px;
+    }
+
+    .activite .images-activites {
+        height: 143px;
     }
 
     .navfooter {
