@@ -98,6 +98,16 @@ input::placeholder {
     color: black;
 }
 
+.titrefiltres {
+    display: flex;
+    align-items: center;
+}
+
+.titrefiltres p {
+    font-weight: 700;
+    color: black;
+}
+
 .filtres {
     display: flex;
     font-size: 17px;
@@ -431,7 +441,7 @@ footer h4 {
         flex-direction: column;
     }
 
-    .nav {
+    nav {
         width: 100%;
     }
 
@@ -445,19 +455,26 @@ footer h4 {
         justify-content: center;
     }
 
+    .navbar li {
+        width: 50%;
+    }
+
     .navbar a {
+        display: block;
         width: 100%;
         padding-bottom: 1.4rem;
-        border-bottom: grey 3px solid;
+        border-bottom: #F2F2F2 3px solid;
+        text-align: center;
     }
 
     .navbar a:hover {
         width: 100%;
-        padding-bottom: 1.4rem;
         border-bottom: #0065FC 3px solid;
         border-right: 20px;
+        padding-bottom: 1.4rem;
         border-top: none;
         color: #0065FC;
+        padding-top: 0;
     }
 
     h1 {
@@ -491,13 +508,17 @@ footer h4 {
         justify-content: center;
     }
 
+    .titrefiltres {
+        display: block;
+    }
+
     .filtres {
         align-items: start;
         flex-wrap: wrap;
     }
 
-    .filtres p {
-        display: flex;
+    .filtres div {
+        width: 35%;
     }
 
     .fa-solid.fa-info {
