@@ -296,7 +296,7 @@ input::placeholder {
     display: flex;
     object-position: center;
     object-fit: cover;
-    width: 137px;
+    width: 96px;
     height: 144px;
     border-radius: 20px 0px 0px 20px;
 }
@@ -385,6 +385,10 @@ footer h4 {
         width: 90%;
     }
 
+    .filtres div {
+        padding: 0px 10px 0px 0px;
+    }
+
     .hebergements-pluspopulaires {
         display: flex;
         justify-content: space-between;
@@ -407,8 +411,12 @@ footer h4 {
         flex-wrap: nowrap;
     }
 
+    .populaires-hotels h3 {
+        font-size: 14px;
+    }
+
     .populaires-hotels .images-populaires {
-        width: 106px;
+        width: 92px;
         height: 144px;
     }
 
