@@ -321,6 +321,7 @@ input::placeholder {
     padding-left: 5%;
     font-weight: 700;
     font-size: 14px;
+    color: black;
 }
 
 .activite .images-activites {
