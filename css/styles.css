@@ -1,4 +1,5 @@
 body {
+    max-width: 1400px;
     width: 90%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -342,7 +343,7 @@ footer h4 {
 }
 
 .contenu-footer {
-    padding: 50px 0px 100px 10px;
+    padding: 50px 200px 100px 0px;
     width: 100%;
     margin-top: 50px;
     background: #F2F2F2;
@@ -429,6 +430,10 @@ footer h4 {
         height: 211px;
     }
 
+    .contenu-footer {
+        padding: 50px 140px 100px 0px;
+    }
+
 }
 
 
@@ -474,6 +479,7 @@ footer h4 {
         padding-bottom: 1.4rem;
         border-bottom: #F2F2F2 3px solid;
         text-align: center;
+        padding: 0px 0px 1.4rem;     
     }
 
     .navbar a:hover {
@@ -527,7 +533,12 @@ footer h4 {
     }
 
     .filtres div {
-        width: 35%;
+        width: 33%;
+    }
+
+    .filtres p{
+        font-size: 11px;
+        padding-left: 0;
     }
 
     .fa-solid.fa-info {
@@ -605,6 +616,18 @@ footer h4 {
 
     .navfooter {
         display: block;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .filtres div {
+        width: 33%;
+    }
+
+    .filtres p {
+        font-size: 7px;
     }
 
 }
