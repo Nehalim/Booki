@@ -1,5 +1,6 @@
 body {
-    max-width: 1400px;
+    max-width: 1440px;
+    min-width: 320px;
     width: 90%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -389,6 +390,7 @@ footer h4 {
 
     .filtres div {
         padding: 0px 10px 0px 0px;
+        margin-left: 15px;
     }
 
     .hebergements-pluspopulaires {
@@ -505,6 +507,10 @@ footer h4 {
         padding-left: 15px;
     }
 
+    #ville{
+        width: 64%;
+    }
+
     #recherche {
         display: none;
     }
@@ -616,18 +622,7 @@ footer h4 {
 
     .navfooter {
         display: block;
-    }
-
-}
-
-@media screen and (max-width: 320px) {
-
-    .filtres div {
-        width: 33%;
-    }
-
-    .filtres p {
-        font-size: 7px;
+        padding-left: 10px;
     }
 
 }
